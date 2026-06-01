@@ -109,7 +109,7 @@ st.markdown("""
 # ─────────────────────────────────────────────────────────────
 # LOAD MODEL — pipeline utuh dari .pkl
 # ─────────────────────────────────────────────────────────────
-MODEL_PATH = r"F:\Teknik informarika\Semester 6 03PT6\Machine Learning II\MID\MID\pipeline_terbaik.pkl"
+MODEL_PATH = r"app.py"
 LABEL_PATH = "label_encoder.pkl"   # sesuaikan jika berbeda lokasi
 
 @st.cache_resource(show_spinner="Memuat model pipeline...")
