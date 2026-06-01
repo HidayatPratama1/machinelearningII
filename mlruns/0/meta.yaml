@@ -1,8 +1,8 @@
 artifact_location: file:///F:/Teknik informarika/Semester 6 03PT6/Machine Learning
   II/MID/MID/mlruns/0
-creation_time: 1780281813126
+creation_time: 1780289428351
 experiment_id: '0'
-last_update_time: 1780281813126
+last_update_time: 1780289428351
 lifecycle_stage: active
 name: Default
 trace_location: null

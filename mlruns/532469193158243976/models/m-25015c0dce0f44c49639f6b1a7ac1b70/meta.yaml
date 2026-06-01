@@ -1,0 +1,11 @@
+artifact_location: file:///F:/Teknik informarika/Semester 6 03PT6/Machine Learning
+  II/MID/MID/mlruns/532469193158243976/models/m-25015c0dce0f44c49639f6b1a7ac1b70/artifacts
+creation_timestamp: 1780289441356
+experiment_id: '532469193158243976'
+last_updated_timestamp: 1780289445482
+model_id: m-25015c0dce0f44c49639f6b1a7ac1b70
+model_type: null
+name: pipeline_model
+source_run_id: 6f80c1e8b0d549558ad9a7cb402443f1
+status: 2
+status_message: null

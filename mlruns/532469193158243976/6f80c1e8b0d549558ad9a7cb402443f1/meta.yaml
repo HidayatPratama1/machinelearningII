@@ -1,0 +1,14 @@
+artifact_uri: file:///F:/Teknik informarika/Semester 6 03PT6/Machine Learning II/MID/MID/mlruns/532469193158243976/6f80c1e8b0d549558ad9a7cb402443f1/artifacts
+end_time: 1780289445591
+entry_point_name: ''
+experiment_id: '532469193158243976'
+lifecycle_stage: active
+run_id: 6f80c1e8b0d549558ad9a7cb402443f1
+run_name: best_pipeline_filter_selectkbest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780289441166
+status: 3
+tags: []
+user_id: wkwwk
