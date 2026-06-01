@@ -1,0 +1,12 @@
+execution_duration_ms: 1236
+request_preview: '{"query": "Calculate the compound interest on $10,000 at 5% annual
+  rate for 10 years"}'
+request_time: '2026-05-25T19:45:38.027Z'
+response_preview: '{"response": "Based on my calculation, $10,000 invested at 5% annual
+  interest compounded yearly for 10 years would grow to around $16,289 or so."}'
+state: OK
+trace_id: tr-00339d8703bb86e9497f9306a8095b24
+trace_location:
+  mlflow_experiment:
+    experiment_id: '363995914127220010'
+  type: MLFLOW_EXPERIMENT

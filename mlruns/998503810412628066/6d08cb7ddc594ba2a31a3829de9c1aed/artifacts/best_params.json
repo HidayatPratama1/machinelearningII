@@ -1,0 +1,6 @@
+{
+  "feature_selection__k": "38",
+  "model__n_estimators": "100",
+  "model__max_depth": "None",
+  "model__min_samples_split": "2"
+}

@@ -1,0 +1,16 @@
+IoT Vulnerability - Classification Report
+==================================================
+Dataset : Preprocessed Balanced (1,048,575 samples)
+Features: 87 original -> 38 selected
+Method  : SelectKBest (f_classif, k=38)
+Model   : RandomForest (n_estimators=100)
+==================================================
+
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00     17730
+     Class 1       1.00      1.00      1.00    191985
+
+    accuracy                           1.00    209715
+   macro avg       1.00      1.00      1.00    209715
+weighted avg       1.00      1.00      1.00    209715

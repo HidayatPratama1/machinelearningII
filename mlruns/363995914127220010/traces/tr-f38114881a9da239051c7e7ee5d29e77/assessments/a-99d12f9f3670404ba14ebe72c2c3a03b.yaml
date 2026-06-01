@@ -1,0 +1,14 @@
+assessment_id: a-99d12f9f3670404ba14ebe72c2c3a03b
+assessment_name: expected_response
+create_time: '2026-06-01T02:53:41.587Z'
+expectation:
+  value: Use mlflow.evaluate() with relevance() and faithfulness() scorers. Create
+    eval dataset with inputs and ground_truth, then compare runs in UI.
+last_update_time: '2026-06-01T02:53:41.587Z'
+metadata:
+  demo: 'true'
+source:
+  source_id: demo_annotator
+  source_type: HUMAN
+trace_id: tr-f38114881a9da239051c7e7ee5d29e77
+valid: true
