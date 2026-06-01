@@ -4,19 +4,8 @@
 # Pipeline: SelectKBest (k=38) + RandomForestClassifier
 # =============================================================
 
-import subprocess, sys
-
-def install(pkg):
-    subprocess.check_call([sys.executable, "-m", "pip", "install", pkg, "-q"])
-
-for pkg in ["streamlit", "scikit-learn", "pandas", "numpy", "joblib",
-            "imbalanced-learn", "matplotlib", "seaborn"]:
-    try:
-        __import__(pkg.replace("-", "_"))
-    except ImportError:
-        install(pkg)
-
 # ── Import ────────────────────────────────────────────────────
+# Dependensi diinstall via requirements.txt (Streamlit Cloud)
 import os
 import joblib
 import numpy as np
@@ -109,7 +98,7 @@ st.markdown("""
 # ─────────────────────────────────────────────────────────────
 # LOAD MODEL — pipeline utuh dari .pkl
 # ─────────────────────────────────────────────────────────────
-MODEL_PATH = r"F:\Teknik informarika\Semester 6 03PT6\Machine Learning II\MID\MID\pipeline_terbaik.pkl"
+MODEL_PATH = "pipeline_terbaik.pkl"
 LABEL_PATH = "label_encoder.pkl"   # sesuaikan jika berbeda lokasi
 
 @st.cache_resource(show_spinner="Memuat model pipeline...")
@@ -219,8 +208,7 @@ with st.sidebar:
         """)
     else:
         st.error("❌ Model tidak ditemukan!")
-        st.code(MODEL_PATH, language=None)
-        st.warning("Pastikan path file .pkl sudah benar dan file ada.")
+        st.warning("Pastikan file `pipeline_terbaik.pkl` sudah di-upload ke repository GitHub di folder yang sama dengan `app.py`.")
 
     st.markdown("---")
     st.markdown("## 📋 Tentang Aplikasi")
@@ -351,9 +339,11 @@ with tab1:
         X_input = pd.DataFrame([row], columns=FEATURE_COLUMNS)
 
         # Pipeline otomatis: scaler → SelectKBest → RF
+        # Konversi ke numpy array untuk menghindari sklearn feature name validation error
+        X_array = X_input.to_numpy()
         try:
-            prediction = pipeline.predict(X_input)[0]
-            proba      = pipeline.predict_proba(X_input)[0]
+            prediction = pipeline.predict(X_array)[0]
+            proba      = pipeline.predict_proba(X_array)[0]
 
             is_attack  = (prediction == 1)
             conf       = proba[prediction] * 100
